@@ -1,20 +1,6 @@
 // Collapsible
 var coll = document.getElementsByClassName("collapsible");
 
-for (let i = 0; i < coll.length; i++) {
-    coll[i].addEventListener("click", function () {
-        this.classList.toggle("active");
-
-        var content = this.nextElementSibling;
-
-        if (content.style.maxHeight) {
-            content.style.maxHeight = null;
-        } else {
-            content.style.maxHeight = content.scrollHeight + "px";
-        }
-
-    });
-}
 
 function getTime() {
     let today = new Date();
@@ -35,7 +21,7 @@ function getTime() {
 
 // Gets the first message
 function firstBotMessage() {
-    let firstMessage = "How's it going?"
+    let firstMessage = "How's it going?" //Primer Mensaje
     document.getElementById("botStarterMessage").innerHTML = '<p class="botText"><span>' + firstMessage + '</span></p>';
 
     let time = getTime();
@@ -52,7 +38,7 @@ function getHardResponse(userText) {
     let botHtml = '<p class="botText"><span>' + botResponse + '</span></p>';
     $("#chatbox").append(botHtml);
 
-    document.getElementById("chat-bar-bottom").scrollIntoView(true);
+    document.getElementById("chat-bar-bottom");
 }
 
 //Gets the text text from the input box and processes it
@@ -67,7 +53,7 @@ function getResponse() {
 
     $("#textInput").val("");
     $("#chatbox").append(userHtml);
-    document.getElementById("chat-bar-bottom").scrollIntoView(true);
+    document.getElementById("chat-bar-bottom");
 
     setTimeout(() => {
         getHardResponse(userText);
@@ -81,7 +67,7 @@ function buttonSendText(sampleText) {
 
     $("#textInput").val("");
     $("#chatbox").append(userHtml);
-    document.getElementById("chat-bar-bottom").scrollIntoView(true);
+    document.getElementById("chat-bar-bottom");
 
     //Uncomment this if you want the bot to respond to this buttonSendText event
     // setTimeout(() => {

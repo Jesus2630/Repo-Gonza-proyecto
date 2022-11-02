@@ -1,0 +1,338 @@
+@import url(https://fonts.googleapis.com/css?family=Khula:700);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+
+/*Estilos del bot*/
+#container{
+  background-color: #cccccc;
+}
+
+.presentacion-div{
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+
+.presentacion-footer{
+    height:60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    background-color: #d3d3d3;
+}
+
+/* div{
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+} */
+
+
+
+.informacion-lista{
+   width: 300px;
+   height: 50px;
+   background-color: black;
+   margin: 5px;
+   color: white;
+   font-family:Khula;
+   border-radius: 5px;
+}
+
+footer{
+   background-color: lightblue;
+   height: 400px;
+   width: 100%;
+   padding: 10px;
+   box-sizing: content-box;
+   display: flex;
+}
+
+@media screen and (max-width: 480px) {
+
+  footer{
+     width: 100%;
+  }
+
+  .informacion-lista{
+   width: 200px;
+   height: 25px;
+   background-color: black;
+   margin: 5px;
+   color: white;
+   font-family:Khula;
+   border-radius: 5px;
+  }
+
+  .parrafo-footer{
+   font-family:Khula;
+   font-size: 10px;
+   margin-top: 10px;
+  }
+
+}
+
+.parrafo-footer{
+   font-family:Khula;
+   margin-top: 20px;
+}
+
+#playStore{
+   margin-top: 20px;
+   min-width: 20%;
+}
+
+#appStore{
+   margin: 20px;
+   min-width: 20%;
+}
+
+div .img{
+   width: 400px;
+   padding: 10px;
+   animation-name: bot;
+   animation-duration: 2s;
+   animation-iteration-count: initial;
+   animation-direction: alternate;
+}
+
+@keyframes bot {
+  0%{
+    transform: scale(20%);
+  }
+
+  100%{
+    transform: scale(100%);
+  }
+ }
+
+
+
+/* Estilos del texto */
+.hidden {
+  opacity:0;
+}
+.console-container {
+ 
+  font-family:Khula;
+  font-size:3em;
+  text-align:center;
+  height:10px;
+  width:600px;
+  display:block;
+  position:absolute;
+  color:white;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  margin:auto;
+  margin-top: 330px;
+}
+.console-underscore {
+  display:inline-block;
+  position:relative;
+  top:-0.14em;
+  left:10px;
+  color: black;
+}
+
+
+/*Btn de navigation*/
+
+.navigation{
+  cursor: pointer;
+  width: 100px;
+  text-decoration: none;
+  background-color:#65d8ff;
+  border-radius: 30px;
+  height: 40px;
+  transition: all 400ms ease;
+  
+}
+
+.navigation:hover{
+  transform: translateY(-10%);
+}
+
+.navigation a{
+  padding: 10px;
+  color: rgb(78, 74, 74);
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-family:Khula ;
+  
+}
+
+.navigation a:hover{
+  color: black;
+}
+
+
+/*Section de informacion del bot*/
+.information{
+    height:100vh ;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    padding: 100px 20px;
+    background-color: #222;
+}
+
+.information .text{
+  display: block;
+  margin-top: 50px;
+  max-width: 900px;
+  margin-left: 100px;
+}
+
+.information h2{
+  color: #ff5080;;
+  font-size: 22px;
+  text-decoration: underline;
+  text-decoration-color: #d3d3d3;
+  text-decoration-thickness: 2px;
+  text-transform: uppercase;
+  padding: 10px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.information p{
+  color: white;
+  font-size: 16px;
+  line-height: 25px;
+  margin-bottom: 12px;
+}
+
+.information h3{
+  color: #ff5080;;
+  font-size: 21px;
+  text-decoration: underline;
+  text-decoration-color: #d3d3d3;
+  text-decoration-thickness: 2px;
+  text-transform: uppercase;
+  padding: 10px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+
+
+.information ul{
+  display: flex;
+  list-style: none;
+  flex-direction: column;
+  gap: 10px ;
+}
+
+.information li{
+  color: white;
+}
+
+.information .img-container{
+  margin-right: 100px;
+  max-width: 500px;
+}
+
+.information .img-bot{
+  width: 400px;
+  padding: 10px;
+  
+}
+
+/*Section de informacion de los miembros del equipo*/
+.ia{
+  background-color: #252326;
+}
+
+/*Estilos mobile first*/
+@media screen and (max-width:500px ) {
+    div{
+        height:100vh ;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+        
+       
+    }
+    
+    div img{
+        width: 400px;
+        padding: 20px;
+        animation-name: efecto;
+     }
+     
+     @keyframes efecto {
+      0%{
+        transform: scale(20%);
+      }
+
+      100%{
+        transform: scale(100%);
+      }
+     }
+
+     
+     
+     
+     
+     .hidden {
+       opacity:0;
+     }
+     .console-container {
+      
+       font-family:Khula;
+       font-size:2em;
+       text-align:center;
+       height:200px;
+       width:300px;
+       display:block;
+       position:absolute;
+       color:white;
+       top:0;
+       bottom:0;
+       left:0;
+       right:0;
+       margin:auto;
+       margin-top: 330px;
+     }
+     .console-underscore {
+        display:inline-block;
+       position:relative;
+       top:-0.14em;
+       left:10px;
+       color: black;
+     }
+     
+}
+
+.barra-opciones{
+   background: rgb(128,9,131);
+   background: linear-gradient(291deg, rgba(128,9,131,1) 41%, rgba(0,0,0,1) 100%);
+   margin: 7px;
+   border-radius: 2rem;
+   max-height: 25%;
+   padding: 5px;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   backdrop-filter: blur(20px);
+}
